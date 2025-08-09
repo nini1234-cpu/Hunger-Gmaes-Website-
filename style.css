@@ -70,6 +70,7 @@ z-index: 1000;
 
  .nav-bar ul li a{
     color: maroon;
+    font-family: 'lato', sans-serif ;
     font-weight: bold;
     font-size: 18px;
     text-decoration: wavy;
@@ -299,7 +300,6 @@ body{
 .bg-section {
  position: relative; 
  width: 100%;
- height : 100vh;
  overflow: hidden;
  z-index: 0;
 }
@@ -323,7 +323,7 @@ body{
 
 
 .plot-intro{
-   padding: 80px 20px;
+   padding: 60px 10px;
    text-align: center;
 }
 
@@ -336,13 +336,13 @@ body{
 }
 
 .plot-intro h1{
-   font-size: 3rem;
+   font-size: 2rem;
    margin-bottom:20px;
    color: white 
 }
 
 .plot-intro p{
-   font-size: 1.1rem;
+   font-size: 1rem;
    line-height:1.6;
    color:white;
 }
@@ -351,8 +351,8 @@ body{
    display:flex;
    flex-direction:column;
    gap:30px;
-   padding:60px 20px;
-   max-width: 600px;  
+   padding:30px 5px;
+   max-width: 1000px;  
    margin:auto;
 }
 
@@ -389,3 +389,88 @@ body{
    margin-top: 10px;
    line-height:1.5;
 }
+
+/*Themes-page*/
+
+body{
+   font-family:'lato', sans-serif;
+   margin:0;
+   background: url("Images/lol.jpeg") no-repeat center center fixed;
+   background-size: cover;
+   color : white
+}
+
+.themes-page{
+   max-width: 1100px;
+   margin: 0 auto;
+   padding: 60px 20px;
+   position:relative;
+}
+
+h1{
+   text-align: center;
+   font-size: 3rem;
+   margin-bottom: 20px;
+   color: white;
+}
+
+.intro,.conclusion{
+   text-align: center;
+   font-size: 1.1rem;
+   margin-bottom: 40px;
+   background-color: rgba(0, 0, 0, 0.4);
+   padding: 15px;
+   border-radius: 8px;
+}
+
+.themes-grid{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+   gap: 30px
+}
+
+.theme-card{
+   background-color: rgba(0, 0, 0, 0.6);
+   padding: 20px;
+   border-radius: 14px;
+   text-align: center;
+   transition: transform 0.3s ease;
+   position: relative;
+   box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+}
+
+.theme-card:hover{
+   transform: translateY(-5px);
+}
+
+.theme-card p{
+   font-size: 1rem;
+   margin: 10px 0;
+}
+
+.quote{
+   display: block;
+   font-style: italic;
+   color: #ccc;
+   margin-top: 12px;
+   font-size: 0.95rem;
+   opacity: 0;
+   transition: opacity 0.4s ease;
+}
+
+.theme-card:hover .quote{
+   opacity: 1;
+}
+
+.icon{
+   width: 60px;
+   height: 60px;
+   margin: 0 auto 10px;
+   color: white;
+   transition: transform 0.4s ease;
+}
+
+.theme-card:hover .icon{
+   transform: scale(1.2) rotate(5deg);
+}
+
