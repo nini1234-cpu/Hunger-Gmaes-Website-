@@ -24,7 +24,7 @@ z-index: 1000;
 
 .header h1{
     color : rgb(228, 196, 13) ;
-    font-family: "Orbitron", sans-serif;
+    font-family: 'Orbitron', sans-serif;
     font-weight: 500;
     font-size: 60px;
     letter-spacing :3px; 
@@ -35,7 +35,7 @@ z-index: 1000;
 
 .header h2{
     color :rgb(228, 196, 13) ;
-     font-family: "Orbitron", sans-serif;
+     font-family: 'Orbitron', sans-serif;
      font-weight: 500;
      font-size : 30px ;
      letter-spacing : 3px;
@@ -289,12 +289,6 @@ z-index: 1000;
 
 /*Plot-Summary page*/
 
-body{
-   margin:0;
-   font-family: 'lato', sans-serif;
-   background-color: black;
-   color: white 
-}
 
 .bg-section {
  position: relative; 
@@ -324,6 +318,8 @@ body{
 .plot-intro{
    padding: 60px 10px;
    text-align: center;
+   color: white ;
+   font-family : 'lato', serif
 }
 
 .intro-overlay{
@@ -376,6 +372,7 @@ body{
 .card-text{
    padding: 20px;
    color:white;
+   font-family: 'lato', serif;
 }
 
 .card-text h2{
@@ -392,7 +389,7 @@ body{
 /*Themes-page*/
 
 body{
-   font-family:'lato', sans-serif;
+   font-family:'lato', serif;
    margin:0;
    background: url("Images/lol.jpeg") no-repeat center center fixed;
    background-size: cover;
